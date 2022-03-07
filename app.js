@@ -38,4 +38,4 @@ app.use(express.static(path.join(__dirname, "client/build")));
 app.get('*',(req,res)=>{
   res.sendFile(path.join(__dirname + "/client/build/index.html"))
 })
-app.listen(process.env.DB_PORT, () => console.log(`server is listeining on ${PORT}`));
+app.listen(process.env.DB_PORT, () => console.log(`server is listeining on ${PORT} || 4000 `));
